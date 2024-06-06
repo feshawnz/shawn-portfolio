@@ -1,16 +1,9 @@
 export const educationData = [
     {
         id: 1,
-        institution: 'WBS Coding School',
-        course: 'Coding Bootcamp',
-        startYear: 'September 2022 ',
-        endYear: ' January 2023'
-    },
-    {
-        id: 2,
-        institution: "St Joseph's Catholic High School",
-        course: 'High School',
-        startYear: 'July 2016 ',
-        endYear: 'May 2022'
+        institution: 'Cal State East Bay',
+        course: 'B.S. in Information Technology',
+        startYear: '2022 ',
+        endYear: ' 2024'
     },
 ]

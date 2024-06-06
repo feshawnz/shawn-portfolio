@@ -4,6 +4,7 @@ import photoshop from '../assets/svg/skills/photoshop.svg'
 import illustrator from '../assets/svg/skills/illustrator.svg'
 import docker from '../assets/svg/skills/docker.svg'
 import adobeXd from '../assets/svg/skills/adobe-xd.svg'
+import jest from '../assets/svg/skills/Jest.svg'
 import afterEffects from '../assets/svg/skills/after-effects.svg'
 import css from '../assets/svg/skills/css.svg'
 import angular from '../assets/svg/skills/angular.svg'
@@ -41,6 +42,7 @@ import swift from '../assets/svg/skills/swift.svg'
 import adobeaudition from '../assets/svg/skills/adobeaudition.svg'
 import aws from '../assets/svg/skills/aws.svg'
 import deno from '../assets/svg/skills/deno.svg'
+import nodeJS from '../assets/svg/skills/nodejs-icon.svg'
 import django from '../assets/svg/skills/django.svg'
 import firebase from '../assets/svg/skills/firebase.svg'
 import gimp from '../assets/svg/skills/gimp.svg'
@@ -58,11 +60,12 @@ import strapi from '../assets/svg/skills/strapi.svg'
 import tensorflow from '../assets/svg/skills/tensorflow.svg'
 import webix from '../assets/svg/skills/webix.svg'
 import wordpress from '../assets/svg/skills/wordpress.svg'
-
+import cypress from '../assets/svg/skills/cypress-svgrepo-com.svg'
 import azure from '../assets/svg/skills/azure.svg'
 import blender from '../assets/svg/skills/blender.svg'
 import fastify from '../assets/svg/skills/fastify.svg'
 import figma from '../assets/svg/skills/figma.svg'
+import redux from '../assets/svg/skills/redux.svg'
 import flutter from '../assets/svg/skills/flutter.svg'
 import haxe from '../assets/svg/skills/haxe.svg'
 import ionic from '../assets/svg/skills/ionic.svg'
@@ -72,9 +75,10 @@ import picsart from '../assets/svg/skills/picsart.svg'
 import sketch from '../assets/svg/skills/sketch.svg'
 import unity from '../assets/svg/skills/unity.svg'
 import wolframalpha from '../assets/svg/skills/wolframalpha.svg'
-
+import sentry from '../assets/svg/skills/sentry-svgrepo-com.svg'
 import canva from '../assets/svg/skills/canva.svg'
-
+import jira from '../assets/svg/skills/atlassian_jira-icon.svg'
+import heroku from '../assets/svg/skills/heroku-icon.svg'
 
 export const skillsImage = (skill) => {
     const skillID = skill.toLowerCase();
@@ -95,6 +99,18 @@ export const skillsImage = (skill) => {
             return afterEffects;
         case 'css':
             return css;
+        case 'heroku':
+            return heroku;
+        case 'nodeJS':
+            return nodeJS;
+        case 'cypress':
+            return cypress;
+        case 'sentry':
+            return sentry;
+        case 'jest':
+            return jest;
+        case 'jira':
+            return jira;
         case 'angular':
             return angular;
         case 'javascript':
@@ -207,6 +223,8 @@ export const skillsImage = (skill) => {
             return fastify;
         case 'figma':
             return figma;
+        case 'redux':
+            return redux;
         case 'flutter':
             return flutter;
         case 'haxe':

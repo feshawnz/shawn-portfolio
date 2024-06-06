@@ -8,14 +8,11 @@ import { ThemeContext } from '../../contexts/ThemeContext';
 import { headerData } from '../../data/headerData';
 import { socialsData } from '../../data/socialsData';
 
-import prof from '../../assets/png/IMG_6982.jpg'
+import Shawn from '../../assets/png/Shawn.png'
 
 import {
-    FaTwitter,
     FaLinkedin,
     FaGithub,
-    FaYoutube,
-    FaBlogger,
 } from 'react-icons/fa';
 
 function Landing() {
@@ -103,49 +100,10 @@ function Landing() {
                                 />
                             </a>
                         )}
-                        {/* {socialsData.twitter && (
-                            <a
-                                href={socialsData.twitter}
-                                target='_blank'
-                                rel='noreferrer'
-                            >
-                                <FaTwitter
-                                    className='landing--social'
-                                    style={{ color: theme.secondary }}
-                                    aria-label='Twitter'
-                                />
-                            </a>
-                        )}
-                        {socialsData.youtube && (
-                            <a
-                                href={socialsData.youtube}
-                                target='_blank'
-                                rel='noreferrer'
-                            >
-                                <FaYoutube
-                                    className='landing--social'
-                                    style={{ color: theme.secondary }}
-                                    aria-label='YouTube'
-                                />
-                            </a>
-                        )}
-                        {socialsData.blogger && (
-                            <a
-                                href={socialsData.blogger}
-                                target='_blank'
-                                rel='noreferrer'
-                            >
-                                <FaBlogger
-                                    className='landing--social'
-                                    style={{ color: theme.secondary }}
-                                    aria-label='Blogger'
-                                />
-                            </a>
-                        )} */}
                     </div>
                 </div>
                 <img
-                    src={prof}
+                    src={Shawn}
                     alt=''
                     className='landing--img'
                     style={{
@@ -161,9 +119,9 @@ function Landing() {
                         className='lcr--content'
                         style={{ color: theme.tertiary }}
                     >
-                        <h6>Web Developer</h6>
-                        <h1>Wiktor Szymczyk</h1>
-                        <p>In some ways, programming is like painting. You start with a blank canvas and certain basic raw materials. You use a combination of science, art, and craft to determine what to do with them.</p>
+                        <h6>Front-End Developer</h6>
+                        <h1>Shawn Zhou</h1>
+                        <p>I am a Software Engineer with a diverse set of skills that allow me to efficiently work both client side and server side. Dedicated and driven to create clean and simple code. I want to continue to learn as much as I can and grow in my career.</p>
 
                         <div className='lcr-buttonContainer'>
                             {headerData.resumePdf && (
