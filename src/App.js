@@ -9,15 +9,17 @@ function App() {
 
   return (
     <div className="app">
-      <Router>
-        <ScrollToTop/>
-        <Switch>
-          <Route path="/" exact component={Main} />
-          <Route path="/projects" exact component={ProjectPage} />
-          <Redirect to="/" />
-        </Switch>
-      </Router>
-      <BackToTop />
+      <BrowserRouter basename="/shawn-portfolio">
+        <Router>
+          <ScrollToTop/>
+          <Switch>
+            <Route path="/" exact component={Main} />
+            <Route path="/projects" exact component={ProjectPage} />
+            <Redirect to="/" />
+          </Switch>
+        </Router>
+        <BackToTop />
+      </BrowserRouter>
     </div>
   );
 }
