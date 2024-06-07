@@ -2,14 +2,11 @@ import React, { useContext } from 'react';
 import { Button } from '@material-ui/core';
 import { NavHashLink as NavLink } from 'react-router-hash-link';
 import { makeStyles } from '@material-ui/core/styles';
-
 import './Landing.css';
 import { ThemeContext } from '../../contexts/ThemeContext';
 import { headerData } from '../../data/headerData';
 import { socialsData } from '../../data/socialsData';
-
-import Shawn from '../../assets/png/Shawn.png'
-
+import self from '../../assets/png/self.png'
 import {
     FaLinkedin,
     FaGithub,
@@ -103,7 +100,7 @@ function Landing() {
                     </div>
                 </div>
                 <img
-                    src={Shawn}
+                    src={self}
                     alt=''
                     className='landing--img'
                     style={{
@@ -121,7 +118,8 @@ function Landing() {
                     >
                         <h6>Front-End Developer</h6>
                         <h1>Shawn Zhou</h1>
-                        <p>I am a Software Engineer with a diverse set of skills that allow me to efficiently work both client side and server side. Dedicated and driven to create clean and simple code. I want to continue to learn as much as I can and grow in my career.</p>
+                        <p>I am a dedicated Frontend Developer with a versatile skill set that enables me to excel in both client-side and server-side environments. I am committed to writing clean, efficient, and maintainable code while continually expanding my knowledge and skills to grow in my career.
+                        </p>
 
                         <div className='lcr-buttonContainer'>
                             {headerData.resumePdf && (

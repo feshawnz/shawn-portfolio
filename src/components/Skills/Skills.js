@@ -1,8 +1,6 @@
 import React,{ useContext } from 'react';
 import Marquee from "react-fast-marquee";
-
 import './Skills.css'
-
 import { ThemeContext } from '../../contexts/ThemeContext';
 import { skillsData } from '../../data/skillsData'
 import { skillsImage } from '../../utils/skillsImage'
@@ -17,7 +15,7 @@ function Skills() {
     }
 
     return (
-        <div className="skills" style={{backgroundColor: theme.secondary}}>
+        <div className="skills" id="skills" style={{backgroundColor: theme.secondary}}>
             <div className="skillsHeader">
                 <h2 style={{color: theme.primary}}>Skills</h2>
             </div>
@@ -25,7 +23,7 @@ function Skills() {
                 <div className="skill--scroll">
                     <Marquee 
                         gradient={false} 
-                        speed={230} 
+                        speed={350} 
                         pauseOnHover={true}
                         pauseOnClick={true} 
                         delay={0}
