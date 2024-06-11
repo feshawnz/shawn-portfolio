@@ -1,5 +1,5 @@
 import one from '../assets/svg/projects/one.svg'
-// import two from '../assets/svg/projects/two.svg'
+import two from '../assets/svg/projects/two.svg'
 // import three from '../assets/svg/projects/three.svg'
 
 export const projectsData = [
@@ -10,13 +10,13 @@ export const projectsData = [
         demo: 'https://feshawnz.github.io/studio-demo/',
         image: one,
     },
-    // {
-    //     id: 2,
-    //     projectName: 'Resume Library',
-    //     tags: ['HTML', 'CSS', 'React'],
-    //     demo: 'https://feshawnz.github.io/work-resume-libraryversion2/',
-    //     image: two,
-    // },
+    {
+        id: 2,
+        projectName: 'Private Project',
+        tags: ['HTML', 'CSS', 'React'],
+        demo: '/',
+        image: two,
+    },
     // {
     //     id: 3,
     //     projectName: 'Funky Buttons',

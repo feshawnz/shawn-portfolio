@@ -146,22 +146,24 @@ function SingleProject({ id, name, demo, image, theme }) {
                         {name}
                     </h2>
                     <img src={image} alt={name} />
-                    <div className='project--showcaseBtn'>
-                        <a
-                            href={demo}
-                            target='_blank'
-                            rel='noreferrer'
-                            className={classes.iconBtn}
-                            aria-labelledby={`${name.replace(' ', '-').toLowerCase()} ${name.replace(' ', '-').toLowerCase()}-demo`}
-                            //onClick={id === 1 ? openModal : undefined}
-                        >
-                            <FaHandPointRight
-                                id={`${name.replace(' ', '-').toLowerCase()}-demo`}
-                                className={classes.icon}
-                                aria-label='Demo'
-                            />
-                        </a>
-                    </div>
+                    {id === 1 ?                    
+                        <div className='project--showcaseBtn'>
+                            <a
+                                href={demo}
+                                target='_blank'
+                                rel='noreferrer'
+                                className={classes.iconBtn}
+                                aria-labelledby={`${name.replace(' ', '-').toLowerCase()} ${name.replace(' ', '-').toLowerCase()}-demo`}
+                                //onClick={id === 1 ? openModal : undefined}
+                            >
+                                <FaHandPointRight
+                                    id={`${name.replace(' ', '-').toLowerCase()}-demo`}
+                                    className={classes.icon}
+                                    aria-label='Demo'
+                                />
+                            </a>
+                        </div> : <h2 style={{ color: theme.tertiary }}>Message me!</h2>
+                    }
                 </div>
             </div>
             {/* <div className={classes.modal}>
