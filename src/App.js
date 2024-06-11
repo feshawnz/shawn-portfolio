@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { Main, ProjectPage } from './pages';
 import { BackToTop } from './components';
 import ScrollToTop from './utils/ScrollToTop';
@@ -10,11 +10,11 @@ function App() {
     <div className="app">
       <BrowserRouter basename="/shawn-portfolio">
         <ScrollToTop />
-        <Switch>
-          <Route path="/" exact component={Main} />
-          <Route path="/projects" exact component={ProjectPage} />
-          <Redirect to="/" />
-        </Switch>
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/projects" element={<ProjectPage />} />
+          <Route path="/" element={<Navigate to="/" />} />
+        </Routes>
         <BackToTop />
       </BrowserRouter>
     </div>
