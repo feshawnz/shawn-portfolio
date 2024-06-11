@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { FaPlay } from 'react-icons/fa';
+import { FaHandPointRight } from 'react-icons/fa';
 import Fade from 'react-reveal/Fade';
 // import OffloadAnalysisReport from '../../../assets/png/OffloadAnalysisReport.png';
 // import ConversationAnalysisReport from '../../../assets/png/ConversationAnalysisReport.png';
@@ -155,7 +155,7 @@ function SingleProject({ id, name, demo, image, theme }) {
                             aria-labelledby={`${name.replace(' ', '-').toLowerCase()} ${name.replace(' ', '-').toLowerCase()}-demo`}
                             //onClick={id === 1 ? openModal : undefined}
                         >
-                            <FaPlay
+                            <FaHandPointRight
                                 id={`${name.replace(' ', '-').toLowerCase()}-demo`}
                                 className={classes.icon}
                                 aria-label='Demo'

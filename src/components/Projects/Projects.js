@@ -1,5 +1,4 @@
 import React,{ useContext} from 'react';
-import { Link } from 'react-router-dom'
 import { ThemeContext } from '../../contexts/ThemeContext';
 import { projectsData } from '../../data/projectsData'
 import './Projects.css'
@@ -31,13 +30,6 @@ function Projects() {
                                 />
                             ))}
                         </div> 
-
-                        {projectsData.length > 3 && (
-                            <div className="projects--viewAll">
-                                <Link to="/projects">
-                                </Link>
-                            </div>
-                        )}
                     </div>
                 </div>
             )}
